@@ -4,9 +4,9 @@
 >
   <th:block th:fragment="content">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <h1 th:text="${singlePage.spec?.title}">title</h1>
+      <h1 th:text="${singlePage.spec?.title}">標題</h1>
       <div class="content flex-auto" itemprop="articleBody" th:utext="${singlePage.content?.content}">
-        singlePage formatted content
+        單頁格式化內容
       </div>
       <div class="post-comment">
         <halo:comment group="content.halo.run" kind="SinglePage" th:name="${singlePage.metadata?.name}" colorScheme="commentColorScheme"/>

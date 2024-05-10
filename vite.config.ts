@@ -31,6 +31,11 @@ export default defineConfig({
              */
             src: "./src/assets/fonts/meslo-LG/MesloLGS-Regular.ttf",
           },
+          {
+            name: "Drowsy Forest",
+            local: "Drowsy Forest",
+            src: "./src/assets/fonts/drowsy/drowsy.ttf",
+          }
         ],
 
         /**

@@ -2,7 +2,7 @@
 @import "./scrollbar.css";
 
 :root {
-  --higan-font-family: Menlo, Meslo LG, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  --higan-font-family: Drowsy Forest, Menlo, Meslo LG, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
     "Noto Color Emoji";
 }

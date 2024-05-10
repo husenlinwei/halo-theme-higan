@@ -4,7 +4,7 @@
 >
   <th:block th:fragment="content">
     <div id="archive" class="content">
-      <h2 th:text="'分类：' + ${category.spec?.displayName}">分类</h2>
+      <h2 th:text="'分類：' + ${category.spec?.displayName}">分類</h2>
       <ul class="post-list flex-auto">
         <li class="post-item" th:each="post : ${posts}">
           <div class="meta">

@@ -1,9 +1,9 @@
 <th:block
   xmlns:th="https://www.thymeleaf.org"
-  th:replace="~{fragments/layout :: html(title='标签列表', content = ~{::content}, header = ~{fragments/header::content}, navbar = ~{})}"
+  th:replace="~{fragments/layout :: html(title='標簽列表', content = ~{::content}, header = ~{fragments/header::content}, navbar = ~{})}"
 >
   <th:block th:fragment="content">
-    <h1>标签列表</h1>
+    <h1>標簽列表</h1>
     <ul th:if="${!#lists.isEmpty(tags)}" class="flex-auto">
       <th:block th:each="tag : ${tags}">
         <li>

@@ -24,7 +24,7 @@
               itemprop="datePublished"
               th:text="${#temporals.format(post.spec?.publishTime, 'yyyy-MM-dd')}"
             >
-              post publish time
+              發布時間
             </time>
           </div>
 
@@ -32,12 +32,12 @@
             <span class="iconify" data-icon="fa-solid:tag" data-inline="false"></span>
             <th:block th:each="tag : ${post.tags}">
               <a class="tag-link" th:href="@{${tag.status?.permalink}}" th:text="${tag.spec?.displayName}">
-                post tag name
+                標簽名
               </a>
             </th:block>
           </div>
 
-          <span th:title="|浏览量 ${post.stats?.visit}|">
+          <span th:title="|瀏覽量 ${post.stats?.visit}|">
             <span class="iconify" data-icon="mdi:eye-outline" data-inline="false"></span>
             <span th:text="${post.stats?.visit}"></span>
           </span>

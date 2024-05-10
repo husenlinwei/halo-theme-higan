@@ -6,8 +6,8 @@
     <span
       class="page-number"
       th:with="totalPage=${posts.totalPages}"
-      th:text="'Page ' + ${posts.page} + ' of ' + ${totalPage}"
-      >Page 1 of 1</span
+      th:text="'頁 ' + ${posts.page} + ' 洎 ' + ${totalPage}"
+      >頁 1 洎 1</span
     >
     <a th:href="@{${posts.nextUrl}}" th:if="${posts.hasNext()}" aria-label="Go to next page">
       <i class="iconify iconify-middle" data-icon="material-symbols:chevron-right"></i>
@@ -17,7 +17,7 @@
 
 <th:block th:fragment="simple-post-list(posts)">
   <section id="writing" class="flex-auto flex flex-col">
-    <h2 class="h1"><a th:href="@{/archives}">Writing</a></h2>
+    <h2 class="h1"><a th:href="@{/archives}">文辭</a></h2>
     <ul class="post-list flex-auto">
       <th:block th:each="item : ${posts.items}">
         <li class="post-item">
@@ -30,7 +30,7 @@
             </time>
           </div>
           <span>
-            <a th:href="@{${item.status?.permalink}}" th:text="${item.spec.title}">文章标题</a>
+            <a th:href="@{${item.status?.permalink}}" th:text="${item.spec.title}">文章標題</a>
             <i
               class="iconify iconify-middle"
               data-icon="typcn:pin-outline"
@@ -71,7 +71,7 @@
             </time>
             <p class="p-0 mb-0 relative z-10 mt-2 text-sm color-accent-3" th:text="${post.status?.excerpt}"></p>
             <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium color-accent-1">
-              Read article
+              閱
             </div>
           </div>
           <time

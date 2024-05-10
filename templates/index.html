@@ -18,7 +18,7 @@
     </section>
 
     <p id="findMe">
-      Find me on
+      找到我
       <th:block th:with="sns=${theme?.config?.sns}">
         <a
           class="icon"
@@ -122,7 +122,7 @@
     </script>
 
     <th:block th:if="${theme?.config.styles?.post_list_layout=='post-list-summary'}">
-      <h1 class="h1"><a th:href="@{/archives}">Writing</a></h1>
+      <h1 class="h1"><a th:href="@{/archives}">文辭</a></h1>
       <th:block th:insert="~{fragments/posts :: post-list-summary(${posts})}"></th:block>
     </th:block>
     <th:block th:unless="${theme?.config.styles?.post_list_layout=='post-list-summary'}">
