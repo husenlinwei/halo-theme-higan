@@ -33,7 +33,7 @@ export default defineConfig({
           },
           {
             name: "Drowsy Forest",
-            local: "Drowsy Forest",
+            local: "Drowsy Forest S",
             src: "./src/assets/fonts/drowsy/drowsy.ttf",
           }
         ],
